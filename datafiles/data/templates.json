@@ -1,0 +1,66 @@
+{
+	
+    "none" : {
+        "rows" : 1,
+        "lock_rows" : false,
+        "properties" : {}
+    },
+    
+    "kinelga_mini" : {
+        "rows" : 2,
+        "lock_rows" : true,
+        "properties" : {
+            "flash" : {
+                "_type"	: "bool",
+                "_default" : false
+            }
+        }
+    },
+    
+    "test_properties" : {
+        "rows" : 1,
+        "lock_rows" : false,
+        "properties" : {
+            "boolean"	: {
+                "_type"	: "bool",
+                "_default" : false
+            },
+            "text"	: {
+                "_type"	: "choose",
+                "_default" : 0,
+                "_options" : ["hello","bye","no","yes"]
+            },
+            "slider"	: {
+                "_type"	: "slider",
+                "_default" : 1,
+                "_min"	: 1,
+                "_max"	: 2
+            },
+            "count"		: {
+                "_type" : "count",
+                "_default" : 0,
+                "_in"		: 1,
+                "_min"	: 0,
+                "_max"	: 10
+            }
+        }
+    },
+    
+    "FridayNightMakerMobile" : {
+        "rows" : 8,
+        "lock_rows" : true,
+        "properties" : {
+            "FXType"	: {
+                "_type"	: "choose",
+                "_default": 0,
+                "_options": ["Flash","ScreenShake","None"]
+            },
+            "Camera"	: {
+                "_type"	: "choose",
+                "_default": 0,
+                "_options": ["none","left","center","right"]
+            }
+        }
+    }
+    
+}
