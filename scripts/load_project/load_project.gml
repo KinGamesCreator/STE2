@@ -19,7 +19,7 @@ function load_project() {
 	var _creationData = json_parse(file_text_read_string(_creation));
 	file_text_close(_creation);
 	
-	global.lockFiles = _creationData.template.lock_files;
+	global.lockFiles = _creationData.template.lock_rows;
 	global.props_menu = _creationData.template.properties;
 	global.default_props = {};
 	
@@ -38,7 +38,7 @@ function load_project() {
 	
 	if !file_exists(working_directory+"projects/" + global.load + "/data.json") {
 		
-		new_project(_creationData.bpm,_creationData.npb,_creationData.template.files);
+		new_project(_creationData.bpm,_creationData.npb,_creationData.template.rows);
 		
 	} else {
 		var aux_file = file_text_open_read(working_directory+"projects/" + global.load + "/data.json");

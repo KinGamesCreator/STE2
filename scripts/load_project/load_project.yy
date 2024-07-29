@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Control",
-    "path": "folders/Objetos/Editor/Control.yy",
+  "$GMScript":"v1",
+  "%Name":"load_project",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"load_project",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Objetos/Editor/Control.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "load_project",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

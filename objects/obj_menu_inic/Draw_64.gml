@@ -23,4 +23,4 @@ draw_sprite_ext(spr_logo,0,display_get_gui_width()/2,50*(-1-selected) + display_
 
 draw_set_valign(fa_bottom); draw_set_halign(fa_left);
 draw_set_color(c_white); draw_set_font(font_info);
-draw_text(5,display_get_gui_height(),"V2.0.0");
+draw_text(5,display_get_gui_height(),"V2.1.0");

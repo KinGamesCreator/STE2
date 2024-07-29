@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Control",
-    "path": "folders/Motor/Control.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_notes_control",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_notes_control",
+  "parent":{
+    "name":"Control",
+    "path":"folders/Motor/Control.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_notes_control",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

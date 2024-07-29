@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Export",
-    "path": "folders/Objetos/Editor/Export.yy",
+  "$GMScript":"v1",
+  "%Name":"scr_export_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_export_functions",
+  "parent":{
+    "name":"Export",
+    "path":"folders/Objetos/Editor/Export.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "scr_export_functions",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -23,21 +23,20 @@ function export_STE() {
 	
 	var temp = file_find_first(working_directory + "projects/" + global.load + "/*",fa_archive);
 	while(temp != "") {
-		zip_add_file(zip,filename_name(working_directory + "projects/" + global.load +"/"+ temp),working_directory + "projects/" + global.load +"/"+ temp,)
+		zip_add_file(zip,filename_name(working_directory + "projects/" + global.load +"/"+ temp),working_directory + "projects/" + global.load +"/"+ temp)
 		temp = file_find_next();
 	}
-	
 	zip_save(zip,path);
-	zip_destroy(zip);
-	
 }
 
 function export_GRS(path){
 	var file_export = get_save_filename("json|*.json","data.json");
 	if file_export != ""{
-		var temp_save = [[]];
-		var temp_save_time = [[]];
+		var temp_save = [];
+		var temp_save_time = [];
 		for (var i = 0; i < array_length(global.notes);i++) {
+			temp_save[i] = [];
+			temp_save_time[i] = [];
 			var aux_count = 0;
 			for (var k = 0; k < array_length(global.notes[i]);k++) {
 				if (global.notes[i][k] > 0) {
@@ -171,7 +170,7 @@ function export_FNM1(path){
 
 function export_osumania(path){
 	
-	#region file OSU defect
+	#region file OSU default
 	
 	var osu_data = [
 		"osu file format v14",
@@ -379,7 +378,7 @@ function export_GRS2(){
 				export_data.notes[i][aux_count] = {
 					start: k * (60 / (global.project.bpm / 60)) / global.project.npb,
 					duration: global.project.notes[i][k].duration * (60 / (global.project.bpm / 60)) / global.project.npb,
-					props:{}
+					props: global.project.notes[i][k].props
 				};
 				aux_count ++;
 				
